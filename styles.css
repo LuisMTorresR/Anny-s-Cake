@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  background-image: url(images/pexels-madison-inouye-1831234.jpg);
+}
+
+.contenedor{
+  width: 95%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1{
+  text-align-last: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 75px;
+  font-style: italic;
+  color: #b9056e;
+}
+
+h2{
+    font-size: 60px;
+  text-align-last: center;
+  font-family: Brush Script MT;
+  color: #8f408b;
+}
+
+nav{
+  margin-top: 50px;
+  border-radius: 3px;
+  background-color: #b9056e;
+  margin-bottom: 30px;
+
+}
+
+nav ul{
+  list-style: none;
+  text-align: center;
+    box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li{
+display: inline;
+margin: 50px;
+font-size: 26px;
+}
+
+nav ul li a{
+  font-style: italic;
+  font-family: serif;
+  color: #ffff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: chartreuse;
+}
+
+.imagenes{
+  display: inline;
+  text-align: center;
+}
+#imagenes1 img{
+  width: 330px;
+  height: 350px;
+}
+
+hr{
+  border: none;
+  height: 5px;
+  background-color: #b9056e;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+#imagenes2 img{
+height: 150px;
+width: 150px;
+}
+
+
+
+#conoceme{
+margin-top: 50px;
+}
+
+#conoceme ul{
+  list-style: none;
+  text-align: center;
+  display: flex;
+}
+
+#conoceme ul li{
+margin: 10px;
+
+}
+
+#conoceme ul li p{
+  line-height: 20pt;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  font-family: Old Standard TT;
+
+  
+}
+
+#conoceme ul li img{
+  width: 200px;
+  height: 300px;
+  margin-left: 10px;
+  border-radius: 50px;
+}
+
+#redes1 img{
+  width: 50px;
+  height: 50px;
+}
+
+#redes{
+  margin-top: 50px;
+}
+
+#redes ul{
+  list-style: none;
+  text-align: center;
+}
+
+#redes ul li{
+margin: 60px;
+font-size: 16px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-style: italic;
+color: #2e2b2e;
+}
+
+#redes ul li img{
+  width: 60px;
+  height: 60px;
+  margin-bottom: -20px;
+}
+
+h3{
+  font-size: 36px;
+  font-family:'Times New Roman', Times, serif;
+  color: #b104a8;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#volver a{
+  text-decoration: none;
+  color: #b104a8;
+}
+
+#volver a:hover {
+  text-decoration: none;
+  color: chartreuse;
+}
+
+.galeria img{
+  width: 350px;
+  height: 350px;
+  border-radius: 6px;
+}
