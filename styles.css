@@ -125,8 +125,6 @@ h2{
   margin: auto;
 }
 
-
-
 .imagenes{
   display: inline;
   text-align: center;
@@ -175,6 +173,7 @@ background-color: #ffffff57;
   font-family: 'miFuente';
   src: url(fuentes/Sweety\ Strawberry.ttf);
 }
+
 .bio p{
   font-size: 20px;
   text-align: justify;
@@ -208,9 +207,15 @@ background-color: #ffffff57;
 #redes ul li{
 margin: 60px;
 font-size: 16px;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-style: italic;
 color: #2e2b2e;
+}
+
+
+#redes ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #b104a8;
+  font-family: 'miFuente';
 }
 
 #redes ul li img{
@@ -228,9 +233,7 @@ color: #2e2b2e;
 
 h3{
   font-size: 36px;
-  font-family:'Times New Roman', Times, serif;
   color: #b104a8;
-  font-style: italic;
   margin-bottom: 20px;
 }
 
@@ -239,6 +242,7 @@ h3{
   color: #b104a8;
   transition: all 500ms ease;
   cursor: pointer;
+  font-family: 'miFuente3';
 }
 
 #volver a:hover {
