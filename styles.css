@@ -9,6 +9,7 @@ body{
   background-image: url(images/21229-cupcakes.jpg);
   background-attachment: fixed;
   background-size: cover;
+   
 }
 
 
@@ -48,44 +49,12 @@ h2{
   color: #b118cf;
 }
 
-.menu{
-  margin-top: 50px;
+h3{
+  font-size: 36px;
+  color: #b104a8;
   margin-bottom: 20px;
-  transition: all .5 ease; 
 }
 
-.menu ul{
-  list-style: none;
-  text-align: center;
-}
-
-.menu ul li{
-  display: inline-block;
-  width: 130px;
-  margin-left: 30px;
-  margin-right: 35px;
-  margin-bottom: 15px;
-  font-size: 26px;
-  background-color: #b9056e; box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.5);
-  border-radius: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.menu ul li a{
-  font-style: italic;
-  font-family: serif;
-  color: #ffff;
-  text-decoration: none;
-  transition: all 500ms ease;
-  cursor: pointer;
-}
-
-.menu ul li a:hover {
-  text-decoration: none;
-  color: chartreuse;
-}
-/*menu movil*/
 .menu-movil{
   width: 45%;
   text-align: center;
@@ -226,16 +195,12 @@ color: #2e2b2e;
 
 .firma{
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h3{
-  font-size: 36px;
-  color: #b104a8;
-  margin-bottom: 20px;
-}
+/*galeria*/
+
 
 #volver a{
   text-decoration: none;
@@ -249,6 +214,15 @@ h3{
   text-decoration: none;
   color: rgb(158, 233, 83);
 }
+.volver-fixed{
+  border-radius: 10px;
+  background-size: cover;
+  position: fixed;
+  height: auto;
+  top: 15px;
+  background: #dfcddea9;
+}
+
 
 .galeria img{
   width: 350px;

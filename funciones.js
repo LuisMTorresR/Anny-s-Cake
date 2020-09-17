@@ -13,7 +13,7 @@ window.addEventListener('scroll', function () {
 
 //menu hamburguesa
 
-function ocultarMenu(){
+function abrirMenu(){
   menu.style.display='initial';
 }
 
@@ -50,3 +50,4 @@ if(isMobile){
 }else{
   menu.classList.remove('menu-movil');
 }
+
