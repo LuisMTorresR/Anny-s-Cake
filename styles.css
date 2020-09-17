@@ -1,55 +1,70 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
 }
 
 
 body{
-  background-image: url(images/pexels-madison-inouye-1831234.jpg);
+  background-image: url(images/21229-cupcakes.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 
 .contenedor{
-  width: 95%;
+  width: 100%;
   max-width: 1000px;
   margin: auto;
+}
+.clearfix{
+  float: none;
+  clear: both;
+}
+
+@font-face{
+  font-family: 'miFuente2';
+  src: url(fuentes/Ballpoint\ Signature.otf);
 }
 
 h1{
   text-align-last: center;
   margin-top: 20px;
   margin-bottom: 0;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 60px;
-  font-style: italic;
+  font-family: 'miFuente2';
+  font-size: 80px;
   color: #b9056e;
 }
 
+@font-face{
+  font-family: 'miFuente3';
+  src: url(fuentes/Sweety\ Strawberry.ttf);
+}
+
 h2{
-    font-size: 40px;
+  font-family: 'miFuente3';
+  font-size: 40px;
   text-align-last: center;
-  font-style: italic;
-  font-family: 'Times New Roman', Times, serif;
-  color: #8f408b;
+  color: #b118cf;
 }
 
-nav{
+.menu{
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  transition: all .5 ease; 
 }
 
-nav ul{
+.menu ul{
   list-style: none;
   text-align: center;
 }
 
-nav ul li{
+.menu ul li{
   display: inline-block;
   width: 130px;
   margin-left: 30px;
   margin-right: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   font-size: 26px;
   background-color: #b9056e; box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.5);
   border-radius: 3px;
@@ -57,7 +72,7 @@ nav ul li{
   padding-right: 20px;
 }
 
-nav ul li a{
+.menu ul li a{
   font-style: italic;
   font-family: serif;
   color: #ffff;
@@ -66,18 +81,64 @@ nav ul li a{
   cursor: pointer;
 }
 
-nav ul li a:hover {
+.menu ul li a:hover {
   text-decoration: none;
   color: chartreuse;
 }
+/*menu movil*/
+.menu-movil{
+  width: 45%;
+  text-align: center;
+  height: auto;
+  margin-top: -184px;
+  right: 10px;
+  position: absolute;
+  border-radius: 10px;
+  background: rgba(241, 19, 141, 0.658);
+  display: none;
+}
+
+.menu-movil ul{
+  list-style: none;
+}
+
+.menu-movil ul li{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: serif;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu-movil ul li a{
+  text-decoration:none;
+  color: rgba(255, 233, 233, 0.932);
+}
+
+.fixed{
+  background-size: cover;
+  position: fixed;
+  height: auto;
+  top: 0;
+  padding-top: 5px;
+  margin: auto;
+}
+
+
 
 .imagenes{
   display: inline;
   text-align: center;
 }
+
+#imagenes1{
+  margin-top: 50px;
+}
+
 #imagenes1 img{
   width: 320px;
-  height: 350px;
+  height: 320px;
   border-radius: 5px;
   border: 5px groove rgb(235, 188, 232);
 }
@@ -96,34 +157,38 @@ height: 150px;
 width: 150px;
 }
 
-#conoceme{
-margin-top: 50px;
+#info{
+display: inline-block;
+background-color: #ffffff57;
 }
 
-#conoceme ul{
-  list-style: none;
+.bio, #foto{
+  width: 300px;
+  height: auto;
   text-align: center;
-  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
 }
 
-#conoceme ul li{
-margin: 10px;
+@font-face{
+  font-family: 'miFuente';
+  src: url(fuentes/Sweety\ Strawberry.ttf);
+}
+.bio p{
+  font-size: 20px;
+  text-align: justify;
+  color: #3d393d;
+  padding: 10px;
+  font-family: 'miFuente';
+
 }
 
-#conoceme ul li p{
-  line-height: 20pt;
-  font-size: 18px;
-  text-align: center;
-  font-style: italic;
-  font-family: Old Standard TT;
-}
-
-#conoceme ul li img{
-  width: 200px;
-  height: 300px;
-  margin-left: 10px;
+#foto img{
+  width: 250px;
+  height: 350px;
+  padding: 30px;
   border-radius: 50px;
-  border: 5px groove rgb(235, 188, 232);
 }
 
 #redes1 img{
@@ -154,6 +219,13 @@ color: #2e2b2e;
   margin-bottom: -20px;
 }
 
+.firma{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h3{
   font-size: 36px;
   font-family:'Times New Roman', Times, serif;
@@ -179,3 +251,32 @@ h3{
   height: 350px;
   border-radius: 6px;
 }
+
+.menu-toggle{
+  padding: 1em;
+  position: fixed;
+  top: .3em;
+  right: .5em;
+  background: rgb(241, 19, 141);
+  border-radius: 5px;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+  content: '';
+  display: block;
+  background: white;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+}
+
+.hamburger::before{
+  transform: translateY(-6px);
+}
+
+.hamburger::after{
+  transform: translateY(3px);
+}
+
